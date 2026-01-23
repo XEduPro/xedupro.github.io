@@ -7,7 +7,7 @@ XEduPro 的官方网站，一套开箱即用的人工智能学习工具。
 - **主页 (index.html)** - XEduPro 简介和核心特性展示
 - **快速入门 (quickstart.html)** - 详细的入门指南和案例介绍
 - **案例 (cases.html)** - 展示 XEduPro 的各种应用案例
-- **文档 (docs.html)** - 全面的帮助文档目录
+- **文档** - 全面的帮助文档目录（参考官方文档）
 - **下载 (download.html)** - 提供各平台的安装包下载
 - **关于 (about.html)** - 介绍 XEduPro 的故事、团队和版本历史
 - **404页面 (404.html)** - 错误页面，处理无效链接
@@ -39,7 +39,7 @@ XEduPro 的官方网站，一套开箱即用的人工智能学习工具。
 ├── index.html
 ├── quickstart.html
 ├── cases.html
-├── docs.html
+
 ├── download.html
 ├── about.html
 ├── 404.html
@@ -49,4 +49,4 @@ XEduPro 的官方网站，一套开箱即用的人工智能学习工具。
 
 ## 最后更新时间
 
-2026年1月23日
+2025年1月23日

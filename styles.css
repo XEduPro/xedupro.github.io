@@ -5,10 +5,7 @@ body {
     color: #333;
 }
 
-.bg-gradient {
-    background: linear-gradient(135deg, #6640ff 0%, #9a7bff 100%);
-    color: white;
-}
+
 
 .hero-image {
     max-width: 300px;
