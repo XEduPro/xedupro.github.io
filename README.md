@@ -18,7 +18,8 @@ XEduPro 的官方网站，一套开箱即用的人工智能学习工具。
 - 统一的导航栏，方便用户在各页面间跳转
 - 现代化的UI设计，使用Bootstrap框架和自定义样式
 - 包含所有必要的功能分区，符合用户需求
-- 包含本地化资源（CSS/JS），不依赖外部CDN
+- 包含本地化资源（CSS/JS/Fonts），不依赖外部CDN
+- 解决了字体文件加载问题，确保图标正常显示
 
 ## 文件结构
 
@@ -28,6 +29,13 @@ XEduPro 的官方网站，一套开箱即用的人工智能学习工具。
 │   └── fontawesome.min.css
 ├── js/
 │   └── bootstrap.bundle.min.js
+├── webfonts/
+│   ├── fa-brands-400.ttf
+│   ├── fa-brands-400.woff2
+│   ├── fa-regular-400.ttf
+│   ├── fa-regular-400.woff2
+│   ├── fa-solid-900.ttf
+│   └── fa-solid-900.woff2
 ├── index.html
 ├── quickstart.html
 ├── cases.html
