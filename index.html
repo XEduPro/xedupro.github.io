@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XEduPro - 开箱即用的人工智能学习工具</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="xedu-logo.svg" alt="XEduPro Logo" width="32" height="32" class="me-2">
+                <span>XEduPro</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">主页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quickstart.html">快速入门</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cases.html">案例</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="docs.html">文档</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="download.html">下载</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">关于</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页横幅 -->
+    <section class="hero-section bg-gradient py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">XEduPro</h1>
+                    <p class="lead mb-4">一套开箱即用的人工智能学习工具，集成深度学习、机器学习、大语言模型、计算机视觉等多种技术栈</p>
+                    <div class="d-flex gap-3">
+                        <a href="quickstart.html" class="btn btn-primary btn-lg px-4">快速开始</a>
+                        <a href="download.html" class="btn btn-outline-primary btn-lg px-4">立即下载</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="xedu-logo.svg" alt="XEduPro Logo" class="img-fluid hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特性介绍 -->
+    <section class="features-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">核心特性</h2>
+                <p class="text-muted">为人工智能学习者提供全方位的工具支持</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="feature-icon mb-3 mx-auto">
+                                <i class="fas fa-brain text-primary"></i>
+                            </div>
+                            <h5 class="card-title">深度学习工具库XEduHub</h5>
+                            <p class="card-text">提供预置模型和通用任务执行能力，支持多种AI任务</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="feature-icon mb-3 mx-auto">
+                                <i class="fas fa-robot text-primary"></i>
+                            </div>
+                            <h5 class="card-title">大语言模型库XEduLLM</h5>
+                            <p class="card-text">集成主流大语言模型，提供API接口和密钥管理</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="feature-icon mb-3 mx-auto">
+                                <i class="fas fa-eye text-primary"></i>
+                            </div>
+                            <h5 class="card-title">计算机视觉库MMEdu</h5>
+                            <p class="card-text">基于OpenMMLab生态，支持图像分类、目标检测等任务</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="feature-icon mb-3 mx-auto">
+                                <i class="fas fa-network-wired text-primary"></i>
+                            </div>
+                            <h5 class="card-title">神经网络库BaseNN</h5>
+                            <p class="card-text">构建和训练自定义神经网络，支持多种架构</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="feature-icon mb-3 mx-auto">
+                                <i class="fas fa-chart-line text-primary"></i>
+                            </div>
+                            <h5 class="card-title">传统机器学习库BaseML</h5>
+                            <p class="card-text">经典机器学习算法实现，支持回归、分类、聚类等任务</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="feature-icon mb-3 mx-auto">
+                                <i class="fas fa-cogs text-primary"></i>
+                            </div>
+                            <h5 class="card-title">EasyDL系列工具</h5>
+                            <p class="card-text">无代码训练、转换、推理工具，降低AI应用门槛</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 使用案例 -->
+    <section class="cases-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">应用场景</h2>
+                <p class="text-muted">从基础学习到实际项目开发</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-graduation-cap text-primary me-2"></i>教学实验</h5>
+                            <p class="card-text">支持各类AI教学场景，提供丰富的实验案例和教程</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-industry text-primary me-2"></i>科研项目</h5>
+                            <p class="card-text">为研究者提供灵活的开发框架和高效的学习算法</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-code text-primary me-2"></i>产品开发</h5>
+                            <p class="card-text">快速构建AI驱动的应用程序和服务</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>XEduPro</h5>
+                    <p>一套开箱即用的人工智能学习工具，致力于降低AI学习门槛，提升开发效率。</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>快速链接</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="quickstart.html" class="text-light">快速入门</a></li>
+                        <li><a href="docs.html" class="text-light">文档中心</a></li>
+                        <li><a href="download.html" class="text-light">下载中心</a></li>
+                        <li><a href="about.html" class="text-light">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>联系我们</h5>
+                    <p>邮箱：contact@xedupro.com</p>
+                    <p>GitHub：<a href="https://github.com/xedupro" class="text-light">github.com/xedupro</a></p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2026 XEduPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
