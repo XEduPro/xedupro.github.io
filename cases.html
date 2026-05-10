@@ -22,25 +22,35 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">主页</a>
+                        <a class="nav-link" href="index.html" data-i18n="nav.home">主页</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="quickstart.html">快速入门</a>
+                        <a class="nav-link" href="quickstart.html" data-i18n="nav.quickstart">快速入门</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="cases.html">案例</a>
+                        <a class="nav-link active" href="cases.html" data-i18n="nav.cases">案例</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://xedu.readthedocs.io/" target="_blank">文档</a>
+                        <a class="nav-link" href="https://xedu.readthedocs.io/" target="_blank" data-i18n="nav.docs">文档</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="download.html">下载</a>
+                        <a class="nav-link" href="download.html" data-i18n="nav.download">下载</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">关于</a>
+                        <a class="nav-link" href="about.html" data-i18n="nav.about">关于</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/XEduPro" target="_blank">GitHub</a>
+                    </li>
+                    <li class="nav-item dropdown lang-switcher">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe me-1"></i><span id="lang-label">简体中文</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#" onclick="switchLang('zh-CN')">简体中文</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="switchLang('zh-TW')">繁體中文</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="switchLang('en')">English</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -52,8 +62,8 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h1 class="display-4 fw-bold mb-4 text-white">项目案例</h1>
-                    <p class="lead text-white">通过实际项目案例学习XEduPro的使用方法</p>
+                    <h1 class="display-4 fw-bold mb-4 text-white" data-i18n="cases.hero.title">项目案例</h1>
+                    <p class="lead text-white" data-i18n="cases.hero.desc">通过实际项目案例学习XEduPro的使用方法</p>
                 </div>
             </div>
         </div>
@@ -66,7 +76,7 @@
                 <div class="col-12">
                     <div class="alert alert-info">
                         <i class="fas fa-info-circle me-2"></i>
-                        所有案例均来自<a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html" target="_blank">XEduPro快速入门手册</a>，包含详细的步骤说明和代码示例。
+                        <span data-i18n="cases.alert">所有案例均来自<a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html" target="_blank">XEduPro快速入门手册</a>，包含详细的步骤说明和代码示例。</span>
                     </div>
                 </div>
             </div>
@@ -76,15 +86,15 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 case-card shadow-sm">
                         <div class="card-body">
-                            <div class="case-badge badge bg-success">无代码</div>
-                            <h5 class="card-title">案例零：快速体验深度学习</h5>
-                            <p class="card-text">无代码训练和推理，快速体验深度学习的魅力。</p>
+                            <div class="case-badge badge bg-success" data-i18n="cases.case0.tag">无代码</div>
+                            <h5 class="card-title" data-i18n="cases.case0.title">案例零：快速体验深度学习</h5>
+                            <p class="card-text" data-i18n="cases.case0.desc">无代码训练和推理，快速体验深度学习的魅力。</p>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>无需编程基础</li>
-                                <li><i class="fas fa-check text-success me-2"></i>快速上手</li>
-                                <li><i class="fas fa-check text-success me-2"></i>直观结果展示</li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case0.f1">无需编程基础</span></li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case0.f2">快速上手</span></li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case0.f3">直观结果展示</span></li>
                             </ul>
-                            <a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html#id2" target="_blank" class="btn btn-outline-primary mt-2">查看详情</a>
+                            <a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html#id2" target="_blank" class="btn btn-outline-primary mt-2" data-i18n="cases.detail">查看详情</a>
                         </div>
                     </div>
                 </div>
@@ -93,15 +103,15 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 case-card shadow-sm">
                         <div class="card-body">
-                            <div class="case-badge badge bg-primary">XEduHub</div>
-                            <h5 class="card-title">案例一：XEduHub执行推理任务</h5>
-                            <p class="card-text">使用XEduHub执行检测任务（检测任务），体验预置模型的强大功能。</p>
+                            <div class="case-badge badge bg-primary" data-i18n="cases.case1.tag">XEduHub</div>
+                            <h5 class="card-title" data-i18n="cases.case1.title">案例一：XEduHub执行推理任务</h5>
+                            <p class="card-text" data-i18n="cases.case1.desc">使用XEduHub执行检测任务（检测任务），体验预置模型的强大功能。</p>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>预置模型</li>
-                                <li><i class="fas fa-check text-success me-2"></i>检测任务</li>
-                                <li><i class="fas fa-check text-success me-2"></i>实时推理</li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case1.f1">预置模型</span></li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case1.f2">检测任务</span></li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case1.f3">实时推理</span></li>
                             </ul>
-                            <a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html#id3" target="_blank" class="btn btn-outline-primary mt-2">查看详情</a>
+                            <a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html#id3" target="_blank" class="btn btn-outline-primary mt-2" data-i18n="cases.detail">查看详情</a>
                         </div>
                     </div>
                 </div>
@@ -110,15 +120,15 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 case-card shadow-sm">
                         <div class="card-body">
-                            <div class="case-badge badge bg-info">BaseML</div>
-                            <h5 class="card-title">案例二：BaseML训练机器学习模型</h5>
-                            <p class="card-text">使用BaseML训练机器学习模型（抛物线），掌握基础机器学习技能。</p>
+                            <div class="case-badge badge bg-info" data-i18n="cases.case2.tag">BaseML</div>
+                            <h5 class="card-title" data-i18n="cases.case2.title">案例二：BaseML训练机器学习模型</h5>
+                            <p class="card-text" data-i18n="cases.case2.desc">使用BaseML训练机器学习模型（抛物线），掌握基础机器学习技能。</p>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>数据预处理</li>
-                                <li><i class="fas fa-check text-success me-2"></i>模型训练</li>
-                                <li><i class="fas fa-check text-success me-2"></i>性能评估</li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case2.f1">数据预处理</span></li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case2.f2">模型训练</span></li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case2.f3">性能评估</span></li>
                             </ul>
-                            <a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html#id4" target="_blank" class="btn btn-outline-primary mt-2">查看详情</a>
+                            <a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html#id4" target="_blank" class="btn btn-outline-primary mt-2" data-i18n="cases.detail">查看详情</a>
                         </div>
                     </div>
                 </div>
@@ -127,15 +137,15 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 case-card shadow-sm">
                         <div class="card-body">
-                            <div class="case-badge badge bg-warning">BaseNN</div>
-                            <h5 class="card-title">案例三：BaseNN训练全连接神经网络</h5>
-                            <p class="card-text">使用BaseNN训练搭建全连接神经网络（鸢尾花），深入了解神经网络原理。</p>
+                            <div class="case-badge badge bg-warning" data-i18n="cases.case3.tag">BaseNN</div>
+                            <h5 class="card-title" data-i18n="cases.case3.title">案例三：BaseNN训练全连接神经网络</h5>
+                            <p class="card-text" data-i18n="cases.case3.desc">使用BaseNN训练搭建全连接神经网络（鸢尾花），深入了解神经网络原理。</p>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>全连接层</li>
-                                <li><i class="fas fa-check text-success me-2"></i>激活函数</li>
-                                <li><i class="fas fa-check text-success me-2"></i>反向传播</li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case3.f1">全连接层</span></li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case3.f2">激活函数</span></li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case3.f3">反向传播</span></li>
                             </ul>
-                            <a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html#id5" target="_blank" class="btn btn-outline-primary mt-2">查看详情</a>
+                            <a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html#id5" target="_blank" class="btn btn-outline-primary mt-2" data-i18n="cases.detail">查看详情</a>
                         </div>
                     </div>
                 </div>
@@ -144,15 +154,15 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 case-card shadow-sm">
                         <div class="card-body">
-                            <div class="case-badge badge bg-danger">MMEdu</div>
-                            <h5 class="card-title">案例四：MMEdu训练LeNet图像分类模型</h5>
-                            <p class="card-text">使用MMEdu训练LeNet图像分类模型（手写体），体验计算机视觉应用。</p>
+                            <div class="case-badge badge bg-danger" data-i18n="cases.case4.tag">MMEdu</div>
+                            <h5 class="card-title" data-i18n="cases.case4.title">案例四：MMEdu训练LeNet图像分类模型</h5>
+                            <p class="card-text" data-i18n="cases.case4.desc">使用MMEdu训练LeNet图像分类模型（手写体），体验计算机视觉应用。</p>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>LeNet架构</li>
-                                <li><i class="fas fa-check text-success me-2"></i>卷积神经网络</li>
-                                <li><i class="fas fa-check text-success me-2"></i>图像预处理</li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case4.f1">LeNet架构</span></li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case4.f2">卷积神经网络</span></li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case4.f3">图像预处理</span></li>
                             </ul>
-                            <a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html#id6" target="_blank" class="btn btn-outline-primary mt-2">查看详情</a>
+                            <a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html#id6" target="_blank" class="btn btn-outline-primary mt-2" data-i18n="cases.detail">查看详情</a>
                         </div>
                     </div>
                 </div>
@@ -161,15 +171,15 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 case-card shadow-sm">
                         <div class="card-body">
-                            <div class="case-badge badge bg-danger">MMEdu</div>
-                            <h5 class="card-title">案例五：MMEdu训练SSD_Lite目标检测模型</h5>
-                            <p class="card-text">使用MMEdu训练SSD_Lite目标检测模型（猫狗），掌握目标检测技术。</p>
+                            <div class="case-badge badge bg-danger" data-i18n="cases.case5.tag">MMEdu</div>
+                            <h5 class="card-title" data-i18n="cases.case5.title">案例五：MMEdu训练SSD_Lite目标检测模型</h5>
+                            <p class="card-text" data-i18n="cases.case5.desc">使用MMEdu训练SSD_Lite目标检测模型（猫狗），掌握目标检测技术。</p>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>SSD_Lite模型</li>
-                                <li><i class="fas fa-check text-success me-2"></i>边界框预测</li>
-                                <li><i class="fas fa-check text-success me-2"></i>多类别检测</li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case5.f1">SSD_Lite模型</span></li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case5.f2">边界框预测</span></li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case5.f3">多类别检测</span></li>
                             </ul>
-                            <a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html#id7" target="_blank" class="btn btn-outline-primary mt-2">查看详情</a>
+                            <a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html#id7" target="_blank" class="btn btn-outline-primary mt-2" data-i18n="cases.detail">查看详情</a>
                         </div>
                     </div>
                 </div>
@@ -178,15 +188,15 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 case-card shadow-sm">
                         <div class="card-body">
-                            <div class="case-badge badge bg-secondary">综合项目</div>
-                            <h5 class="card-title">案例六：石头剪刀布实时识别</h5>
-                            <p class="card-text">综合项目石头剪刀布的实时识别（XEduHub+BaseNN），运用多种技术实现完整项目。</p>
+                            <div class="case-badge badge bg-secondary" data-i18n="cases.case6.tag">综合项目</div>
+                            <h5 class="card-title" data-i18n="cases.case6.title">案例六：石头剪刀布实时识别</h5>
+                            <p class="card-text" data-i18n="cases.case6.desc">综合项目石头剪刀布的实时识别（XEduHub+BaseNN），运用多种技术实现完整项目。</p>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>多库协同</li>
-                                <li><i class="fas fa-check text-success me-2"></i>实时推理</li>
-                                <li><i class="fas fa-check text-success me-2"></i>完整项目</li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case6.f1">多库协同</span></li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case6.f2">实时推理</span></li>
+                                <li><i class="fas fa-check text-success me-2"></i><span data-i18n="cases.case6.f3">完整项目</span></li>
                             </ul>
-                            <a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html#id8" target="_blank" class="btn btn-outline-primary mt-2">查看详情</a>
+                            <a href="https://xedu.readthedocs.io/zh-cn/master/how_to_quick_start.html#id8" target="_blank" class="btn btn-outline-primary mt-2" data-i18n="cases.detail">查看详情</a>
                         </div>
                     </div>
                 </div>
@@ -199,24 +209,24 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h2 class="fw-bold mb-4">为什么选择XEduPro案例？</h2>
-                    <p class="lead">我们的案例设计遵循循序渐进的原则，从简单到复杂，帮助您系统地掌握AI技术。</p>
+                    <h2 class="fw-bold mb-4" data-i18n="cases.why.title">为什么选择XEduPro案例？</h2>
+                    <p class="lead" data-i18n="cases.why.desc">我们的案例设计遵循循序渐进的原则，从简单到复杂，帮助您系统地掌握AI技术。</p>
                     <ul class="list-group list-group-flush mt-4">
                         <li class="list-group-item bg-transparent border-0 ps-0">
                             <i class="fas fa-check-circle text-success me-2"></i>
-                            <strong>理论与实践结合</strong> - 每个案例都包含理论背景和实践操作
+                            <span data-i18n="cases.why.f1"><strong>理论与实践结合</strong> - 每个案例都包含理论背景和实践操作</span>
                         </li>
                         <li class="list-group-item bg-transparent border-0 ps-0">
                             <i class="fas fa-check-circle text-success me-2"></i>
-                            <strong>由浅入深</strong> - 从基础概念到高级应用，层层递进
+                            <span data-i18n="cases.why.f2"><strong>由浅入深</strong> - 从基础概念到高级应用，层层递进</span>
                         </li>
                         <li class="list-group-item bg-transparent border-0 ps-0">
                             <i class="fas fa-check-circle text-success me-2"></i>
-                            <strong>实用性强</strong> - 案例来源于真实应用场景
+                            <span data-i18n="cases.why.f3"><strong>实用性强</strong> - 案例来源于真实应用场景</span>
                         </li>
                         <li class="list-group-item bg-transparent border-0 ps-0">
                             <i class="fas fa-check-circle text-success me-2"></i>
-                            <strong>可复现</strong> - 提供完整代码和数据集
+                            <span data-i18n="cases.why.f4"><strong>可复现</strong> - 提供完整代码和数据集</span>
                         </li>
                     </ul>
                 </div>
@@ -233,30 +243,31 @@
             <div class="row">
                 <div class="col-md-4">
                     <h5>XEduPro</h5>
-                    <p>一套开箱即用的人工智能学习工具，致力于降低AI学习门槛，提升开发效率。</p>
+                    <p data-i18n="footer.desc">一套开箱即用的人工智能学习工具，致力于降低AI学习门槛，提升开发效率。</p>
                 </div>
                 <div class="col-md-4">
-                    <h5>快速链接</h5>
+                    <h5 data-i18n="footer.quicklinks">快速链接</h5>
                     <ul class="list-unstyled">
-                        <li><a href="quickstart.html" class="text-light">快速入门</a></li>
-
-                        <li><a href="download.html" class="text-light">下载中心</a></li>
-                        <li><a href="about.html" class="text-light">关于我们</a></li>
+                        <li><a href="quickstart.html" class="text-light" data-i18n="footer.quickstart">快速入门</a></li>
+                        <li><a href="https://xedu.readthedocs.io/zh-cn/master/" target="_blank" class="text-light" data-i18n="footer.officialDocs">官方文档</a></li>
+                        <li><a href="download.html" class="text-light" data-i18n="footer.downloadCenter">下载中心</a></li>
+                        <li><a href="about.html" class="text-light" data-i18n="footer.aboutUs">关于我们</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h5>联系我们</h5>
-                    <p>邮箱：xiezuoru@vip.qq.com</p>
+                    <h5 data-i18n="footer.contact">联系我们</h5>
+                    <p data-i18n="footer.email">邮箱：xiezuoru@vip.qq.com</p>
                     <p>GitHub：<a href="https://github.com/xedupro" class="text-light">github.com/xedupro</a></p>
                 </div>
             </div>
             <hr class="my-4">
             <div class="text-center">
-                <p>&copy; 2026 XEduPro. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2026 XEduPro. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
 </html>

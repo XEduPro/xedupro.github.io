@@ -22,25 +22,35 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">主页</a>
+                        <a class="nav-link" href="index.html" data-i18n="nav.home">主页</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="quickstart.html">快速入门</a>
+                        <a class="nav-link" href="quickstart.html" data-i18n="nav.quickstart">快速入门</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cases.html">案例</a>
+                        <a class="nav-link" href="cases.html" data-i18n="nav.cases">案例</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://xedu.readthedocs.io/" target="_blank">文档</a>
+                        <a class="nav-link" href="https://xedu.readthedocs.io/" target="_blank" data-i18n="nav.docs">文档</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="download.html">下载</a>
+                        <a class="nav-link" href="download.html" data-i18n="nav.download">下载</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="about.html">关于</a>
+                        <a class="nav-link active" href="about.html" data-i18n="nav.about">关于</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/XEduPro" target="_blank">GitHub</a>
+                    </li>
+                    <li class="nav-item dropdown lang-switcher">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe me-1"></i><span id="lang-label">简体中文</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#" onclick="switchLang('zh-CN')">简体中文</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="switchLang('zh-TW')">繁體中文</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="switchLang('en')">English</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -52,8 +62,8 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h1 class="display-4 fw-bold mb-4 text-white">关于XEduPro</h1>
-                    <p class="lead text-white">一套开箱即用的人工智能学习工具，致力于降低AI学习门槛</p>
+                    <h1 class="display-4 fw-bold mb-4 text-white" data-i18n="about.hero.title">关于XEduPro</h1>
+                    <p class="lead text-white" data-i18n="about.hero.desc">一套开箱即用的人工智能学习工具，致力于降低AI学习门槛</p>
                 </div>
             </div>
         </div>
@@ -65,24 +75,24 @@
             <div class="row mb-5">
                 <div class="col-lg-8 mx-auto">
                     <div class="card shadow-sm p-4">
-                        <h2 class="mb-4">XEduPro的故事</h2>
-                        <p>XEduPro是一个开源、可本地化部署的人工智能教学工具，专为中小学人工智能教育设计。它利用用户电脑算力进行AI学习，提供了丰富的功能库，旨在降低人工智能教育的门槛，让师生能够轻松体验和学习AI技术。</p>
-                        <p>随着人工智能技术的快速发展，教育领域对AI教学工具的需求日益增长。XEduPro应运而生，致力于为教师和学生提供一套完整、易用的人工智能学习解决方案，使AI教育更加普及化和实用化。</p>
-                        
+                        <h2 class="mb-4" data-i18n="about.story.title">XEduPro的故事</h2>
+                        <p data-i18n="about.story.p1">XEduPro是一个开源、可本地化部署的人工智能教学工具，专为中小学人工智能教育设计。它利用用户电脑算力进行AI学习，提供了丰富的功能库，旨在降低人工智能教育的门槛，让师生能够轻松体验和学习AI技术。</p>
+                        <p data-i18n="about.story.p2">随着人工智能技术的快速发展，教育领域对AI教学工具的需求日益增长。XEduPro应运而生，致力于为教师和学生提供一套完整、易用的人工智能学习解决方案，使AI教育更加普及化和实用化。</p>
+
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="card h-100 bg-light">
                                     <div class="card-body">
-                                        <h5><i class="fas fa-lightbulb text-primary me-2"></i>愿景</h5>
-                                        <p>让人工智能教育走进每一间教室，让学生能够亲身体验AI技术的魅力，激发创新思维。</p>
+                                        <h5><i class="fas fa-lightbulb text-primary me-2"></i><span data-i18n="about.vision.title">愿景</span></h5>
+                                        <p data-i18n="about.vision.desc">让人工智能教育走进每一间教室，让学生能够亲身体验AI技术的魅力，激发创新思维。</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="card h-100 bg-light">
                                     <div class="card-body">
-                                        <h5><i class="fas fa-cogs text-primary me-2"></i>使命</h5>
-                                        <p>提供简单易用的AI教学工具，推动人工智能教育的普及和发展，培养下一代AI人才。</p>
+                                        <h5><i class="fas fa-cogs text-primary me-2"></i><span data-i18n="about.mission.title">使命</span></h5>
+                                        <p data-i18n="about.mission.desc">提供简单易用的AI教学工具，推动人工智能教育的普及和发展，培养下一代AI人才。</p>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +104,7 @@
             <!-- 核心理念 -->
             <div class="row mb-5">
                 <div class="col-12">
-                    <h3 class="text-center mb-4">我们的核心理念</h3>
+                    <h3 class="text-center mb-4" data-i18n="about.values.title">我们的核心理念</h3>
                     <div class="row">
                         <div class="col-md-4 mb-4">
                             <div class="card h-100 text-center">
@@ -102,8 +112,8 @@
                                     <div class="feature-icon mx-auto mb-3">
                                         <i class="fas fa-chalkboard-teacher"></i>
                                     </div>
-                                    <h5>教育优先</h5>
-                                    <p>专注于教育场景，设计符合教学规律的AI工具和课程内容。</p>
+                                    <h5 data-i18n="about.val1.title">教育优先</h5>
+                                    <p data-i18n="about.val1.desc">专注于教育场景，设计符合教学规律的AI工具和课程内容。</p>
                                 </div>
                             </div>
                         </div>
@@ -113,8 +123,8 @@
                                     <div class="feature-icon mx-auto mb-3">
                                         <i class="fas fa-plug"></i>
                                     </div>
-                                    <h5>开箱即用</h5>
-                                    <p>预配置好的环境和工具，无需复杂安装配置，即装即用。</p>
+                                    <h5 data-i18n="about.val2.title">开箱即用</h5>
+                                    <p data-i18n="about.val2.desc">预配置好的环境和工具，无需复杂安装配置，即装即用。</p>
                                 </div>
                             </div>
                         </div>
@@ -124,8 +134,8 @@
                                     <div class="feature-icon mx-auto mb-3">
                                         <i class="fas fa-layer-group"></i>
                                     </div>
-                                    <h5>功能全面</h5>
-                                    <p>集成机器学习、深度学习、大语言模型、计算机视觉等多种AI技术栈。</p>
+                                    <h5 data-i18n="about.val3.title">功能全面</h5>
+                                    <p data-i18n="about.val3.desc">集成机器学习、深度学习、大语言模型、计算机视觉等多种AI技术栈。</p>
                                 </div>
                             </div>
                         </div>
@@ -136,15 +146,15 @@
             <!-- XEduPro生态系统 -->
             <div class="row mb-5">
                 <div class="col-12">
-                    <h3 class="text-center mb-4">XEduPro生态系统</h3>
+                    <h3 class="text-center mb-4" data-i18n="about.eco.title">XEduPro生态系统</h3>
                     <div class="card shadow-sm p-4">
-                        <p>XEduPro不仅仅是一个工具，更是一个完整的教育生态系统。它已经逐步内置在多个面向初学者的人工智能学习平台中，包括：</p>
+                        <p data-i18n="about.eco.desc">XEduPro不仅仅是一个工具，更是一个完整的教育生态系统。它已经逐步内置在多个面向初学者的人工智能学习平台中，包括：</p>
                         <ul>
                             <li><strong>浦育平台</strong> (OpenInnoLab)</li>
                             <li><strong>Mo</strong> (浙江大学智海)</li>
                             <li><strong>OpenHydra</strong></li>
                         </ul>
-                        <p>这种生态整合使得XEduPro能够更好地服务于教育场景，为师生提供更加便捷的AI学习体验。</p>
+                        <p data-i18n="about.eco.note">这种生态整合使得XEduPro能够更好地服务于教育场景，为师生提供更加便捷的AI学习体验。</p>
                     </div>
                 </div>
             </div>
@@ -154,26 +164,26 @@
                 <div class="col-12">
                     <div class="card shadow-sm">
                         <div class="card-header bg-primary text-white">
-                            <h4 class="mb-0"><i class="fas fa-history me-2"></i>版本更新历史</h4>
+                            <h4 class="mb-0"><i class="fas fa-history me-2"></i><span data-i18n="about.version.title">版本更新历史</span></h4>
                         </div>
                         <div class="card-body">
                             <div class="timeline">
                                 <div class="timeline-item mb-4">
-                                    <h5>XEduPro 最新版</h5>
-                                    <p class="text-muted mb-1">最新功能更新</p>
+                                    <h5 data-i18n="about.version.latest">XEduPro 最新版</h5>
+                                    <p class="text-muted mb-1" data-i18n="about.version.latestsub">最新功能更新</p>
                                     <ul>
-                                        <li>集成XEduHub深度学习工具库，支持模型分享和流通</li>
-                                        <li>提供丰富的教学案例，如车牌识别、视频上色等AI艺术创作</li>
-                                        <li>支持中小学人工智能教学的核心功能</li>
+                                        <li data-i18n="about.version.f1">集成XEduHub深度学习工具库，支持模型分享和流通</li>
+                                        <li data-i18n="about.version.f2">提供丰富的教学案例，如车牌识别、视频上色等AI艺术创作</li>
+                                        <li data-i18n="about.version.f3">支持中小学人工智能教学的核心功能</li>
                                     </ul>
                                 </div>
                                 <div class="timeline-item mb-4">
-                                    <h5>功能特色</h5>
-                                    <p class="text-muted mb-1">教育导向的设计</p>
+                                    <h5 data-i18n="about.version.feature">功能特色</h5>
+                                    <p class="text-muted mb-1" data-i18n="about.version.featuresub">教育导向的设计</p>
                                     <ul>
-                                        <li>面向中小学生的友好界面设计</li>
-                                        <li>丰富的教学案例和课程材料</li>
-                                        <li>支持本地化部署，保护学生隐私</li>
+                                        <li data-i18n="about.version.f4">面向中小学生的友好界面设计</li>
+                                        <li data-i18n="about.version.f5">丰富的教学案例和课程材料</li>
+                                        <li data-i18n="about.version.f6">支持本地化部署，保护学生隐私</li>
                                     </ul>
                                 </div>
                             </div>
@@ -185,30 +195,30 @@
             <!-- 教育价值 -->
             <div class="row">
                 <div class="col-12">
-                    <h3 class="text-center mb-4">教育价值与意义</h3>
+                    <h3 class="text-center mb-4" data-i18n="about.education.title">教育价值与意义</h3>
                     <div class="row text-center">
                         <div class="col-md-3 col-6 mb-4">
                             <div class="partner-logo p-3 bg-light rounded">
                                 <i class="fas fa-lightbulb fa-3x text-primary"></i>
-                                <p class="mt-2 mb-0">启发思维</p>
+                                <p class="mt-2 mb-0" data-i18n="about.edu1">启发思维</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-6 mb-4">
                             <div class="partner-logo p-3 bg-light rounded">
                                 <i class="fas fa-graduation-cap fa-3x text-info"></i>
-                                <p class="mt-2 mb-0">教育创新</p>
+                                <p class="mt-2 mb-0" data-i18n="about.edu2">教育创新</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-6 mb-4">
                             <div class="partner-logo p-3 bg-light rounded">
                                 <i class="fas fa-users fa-3x text-warning"></i>
-                                <p class="mt-2 mb-0">协作学习</p>
+                                <p class="mt-2 mb-0" data-i18n="about.edu3">协作学习</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-6 mb-4">
                             <div class="partner-logo p-3 bg-light rounded">
                                 <i class="fas fa-rocket fa-3x text-danger"></i>
-                                <p class="mt-2 mb-0">快速上手</p>
+                                <p class="mt-2 mb-0" data-i18n="about.edu4">快速上手</p>
                             </div>
                         </div>
                     </div>
@@ -217,39 +227,37 @@
         </div>
     </section>
 
-
-
     <!-- 页脚 -->
     <footer class="bg-dark text-light py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <h5>XEduPro</h5>
-                    <p>一套开箱即用的人工智能学习工具，致力于降低AI学习门槛，提升开发效率。</p>
+                    <p data-i18n="footer.desc">一套开箱即用的人工智能学习工具，致力于降低AI学习门槛，提升开发效率。</p>
                 </div>
                 <div class="col-md-4">
-                    <h5>快速链接</h5>
+                    <h5 data-i18n="footer.quicklinks">快速链接</h5>
                     <ul class="list-unstyled">
-                        <li><a href="quickstart.html" class="text-light">快速入门</a></li>
-
-                        <li><a href="https://xedu.readthedocs.io/zh-cn/master/" target="_blank" class="text-light">官方文档</a></li>
-                        <li><a href="download.html" class="text-light">下载中心</a></li>
-                        <li><a href="about.html" class="text-light">关于我们</a></li>
+                        <li><a href="quickstart.html" class="text-light" data-i18n="footer.quickstart">快速入门</a></li>
+                        <li><a href="https://xedu.readthedocs.io/zh-cn/master/" target="_blank" class="text-light" data-i18n="footer.officialDocs">官方文档</a></li>
+                        <li><a href="download.html" class="text-light" data-i18n="footer.downloadCenter">下载中心</a></li>
+                        <li><a href="about.html" class="text-light" data-i18n="footer.aboutUs">关于我们</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h5>联系我们</h5>
-                    <p>邮箱：xiezuoru@vip.qq.com</p>
+                    <h5 data-i18n="footer.contact">联系我们</h5>
+                    <p data-i18n="footer.email">邮箱：xiezuoru@vip.qq.com</p>
                     <p>GitHub：<a href="https://github.com/xedupro" class="text-light">github.com/xedupro</a></p>
                 </div>
             </div>
             <hr class="my-4">
             <div class="text-center">
-                <p>&copy; 2026 XEduPro. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2026 XEduPro. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
 </html>

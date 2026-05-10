@@ -8,7 +8,7 @@ body {
 
 
 .hero-image {
-    max-width: 300px;
+    max-width: 180px;
     height: auto;
 }
 
@@ -138,6 +138,27 @@ body {
     border: 4px solid #e9ecef;
 }
 
+/* 语言切换器样式 */
+.lang-switcher .dropdown-menu {
+    min-width: auto;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 8px 0;
+}
+
+.lang-switcher .dropdown-item {
+    padding: 6px 16px;
+    font-size: 0.9em;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.lang-switcher .dropdown-item:hover {
+    background-color: #f0ecff;
+    color: #6640ff;
+}
+
 /* 响应式设计 */
 @media (max-width: 992px) {
     .hero-section .container {
@@ -166,6 +187,19 @@ body {
     .download-options {
         grid-template-columns: 1fr !important;
     }
+
+    .lang-switcher .dropdown-menu {
+        background: rgba(13, 110, 253, 0.95);
+    }
+
+    .lang-switcher .dropdown-item {
+        color: #fff;
+    }
+
+    .lang-switcher .dropdown-item:hover {
+        background-color: rgba(255,255,255,0.15);
+        color: #fff;
+    }
     
     .feature-icon {
         width: 50px;
@@ -183,7 +217,7 @@ body {
     }
     
     .hero-image {
-        max-width: 200px;
+        max-width: 120px;
     }
     
     h1.display-4 {
