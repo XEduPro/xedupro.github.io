@@ -73,14 +73,14 @@
     <section class="about-content py-5">
         <div class="container">
             <div class="row mb-5">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-12">
                     <div class="card shadow-sm p-4">
                         <h2 class="mb-4" data-i18n="about.story.title">XEduPro的故事</h2>
-                        <p data-i18n="about.story.p1">XEduPro是一个开源、可本地化部署的人工智能教学工具，专为中小学人工智能教育设计。它利用用户电脑算力进行AI学习，提供了丰富的功能库，旨在降低人工智能教育的门槛，让师生能够轻松体验和学习AI技术。</p>
-                        <p data-i18n="about.story.p2">随着人工智能技术的快速发展，教育领域对AI教学工具的需求日益增长。XEduPro应运而生，致力于为教师和学生提供一套完整、易用的人工智能学习解决方案，使AI教育更加普及化和实用化。</p>
+                        <p data-i18n="about.story.p1">XEduPro源自上海人工智能实验室的开源人工智能工具包XEdu。2024年8月，XEdu因故中止更新。为了不让这一深受中小学师生喜爱的AI学习工具消失，原项目组负责人谢作如与核心成员邱奕盛、王海涛等人，在各自工作单位的协助下，于2025年8月重新组织力量进行维护。因项目新增了对国产算力的支持，功能大大加强，故更名为XEduPro。</p>
+                        <p data-i18n="about.story.p2">XEduPro的渊源可追溯至面向中小学AI教育的MMEdu，并逐步发展为涵盖计算机视觉、经典机器学习、神经网络和预训练模型推理的完整工具链。XEduPro定位于面向中小学AI教育的开发和学习工具，致力于降低AI学习门槛，让师生能够用简洁的代码完成真实AI项目的开发与部署。2025年12月，团队在全国第二届中小学人工智能与创客教育大会上正式发布XEduPro，标志着这一项目再度起航。</p>
 
                         <div class="row mt-4">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="card h-100 bg-light">
                                     <div class="card-body">
                                         <h5><i class="fas fa-lightbulb text-primary me-2"></i><span data-i18n="about.vision.title">愿景</span></h5>
@@ -88,11 +88,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="card h-100 bg-light">
                                     <div class="card-body">
                                         <h5><i class="fas fa-cogs text-primary me-2"></i><span data-i18n="about.mission.title">使命</span></h5>
                                         <p data-i18n="about.mission.desc">提供简单易用的AI教学工具，推动人工智能教育的普及和发展，培养下一代AI人才。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 bg-light">
+                                    <div class="card-body">
+                                        <h5><i class="fas fa-star text-primary me-2"></i><span data-i18n="about.values.title">理念</span></h5>
+                                        <p data-i18n="about.values.desc">专注于教育场景，预置人工智能教育全场景的环境和工具，开箱即用。</p>
                                     </div>
                                 </div>
                             </div>
@@ -101,41 +109,63 @@
                 </div>
             </div>
 
-            <!-- 核心理念 -->
+            <!-- 维护团队 -->
             <div class="row mb-5">
                 <div class="col-12">
-                    <h3 class="text-center mb-4" data-i18n="about.values.title">我们的核心理念</h3>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100 text-center">
-                                <div class="card-body">
-                                    <div class="feature-icon mx-auto mb-3">
-                                        <i class="fas fa-chalkboard-teacher"></i>
-                                    </div>
-                                    <h5 data-i18n="about.val1.title">教育优先</h5>
-                                    <p data-i18n="about.val1.desc">专注于教育场景，设计符合教学规律的AI工具和课程内容。</p>
-                                </div>
-                            </div>
+                    <h3 class="text-center mb-4" data-i18n="about.team.title">项目维护团队</h3>
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0"><i class="fas fa-users me-2"></i><span data-i18n="about.team.current">当前维护团队</span></h4>
                         </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100 text-center">
-                                <div class="card-body">
-                                    <div class="feature-icon mx-auto mb-3">
-                                        <i class="fas fa-plug"></i>
-                                    </div>
-                                    <h5 data-i18n="about.val2.title">开箱即用</h5>
-                                    <p data-i18n="about.val2.desc">预配置好的环境和工具，无需复杂安装配置，即装即用。</p>
+                        <div class="card-body">
+                            <p data-i18n="about.team.current.desc">XEduPro团队由如下单位和企业组成，温州科技高级中学、华南师范大学、上海科技大学附属学校、上海熊星科技、OpenHydra、盛通科技等。</p>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <p class="font-weight-bold mb-2" data-i18n="about.team.leader">项目负责人：</p>
+                                    <ul class="mb-4">
+                                        <li data-i18n="about.team.leader1">谢作如（温州科技高级中学）</li>
+                                        <li data-i18n="about.team.leader2">钟柏昌（华南师范大学）</li>
+                                    </ul>
+                                    <p class="font-weight-bold mb-2" data-i18n="about.team.current.list">不完全名单：</p>
+                                    <ul>
+                                        <li data-i18n="about.team.member1">林淼焱（温州科技高级中学）</li>
+                                        <li data-i18n="about.team.member2">邱奕盛（上海科技大学附属学校）</li>
+                                        <li data-i18n="about.team.member3">王海涛（上海科技大学附属学校）</li>
+                                        <li data-i18n="about.team.member4">郑 祥（上海科技大学附属学校）</li>
+                                        <li data-i18n="about.team.member5">钟以维（浙江省三门县教师发展中心）</li>
+                                        <li data-i18n="about.team.member6">周 睿（MIT，上海熊星科技）</li>
+                                        <li data-i18n="about.team.member7">李 开（OpenHydra）</li>
+                                        <li data-i18n="about.team.member8">胡家赓（盛通科技）</li>
+                                        <li data-i18n="about.team.member9">……</li>
+                                    </ul>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100 text-center">
-                                <div class="card-body">
-                                    <div class="feature-icon mx-auto mb-3">
-                                        <i class="fas fa-layer-group"></i>
+                                <div class="col-md-5">
+                                    <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="images/about01.jpg" class="d-block w-100 rounded" alt="团队照片1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/about02.jpg" class="d-block w-100 rounded" alt="团队照片2">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/about03.jpg" class="d-block w-100 rounded" alt="团队照片3">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
-                                    <h5 data-i18n="about.val3.title">功能全面</h5>
-                                    <p data-i18n="about.val3.desc">集成机器学习、深度学习、大语言模型、计算机视觉等多种AI技术栈。</p>
                                 </div>
                             </div>
                         </div>
@@ -148,82 +178,91 @@
                 <div class="col-12">
                     <h3 class="text-center mb-4" data-i18n="about.eco.title">XEduPro生态系统</h3>
                     <div class="card shadow-sm p-4">
-                        <p data-i18n="about.eco.desc">XEduPro不仅仅是一个工具，更是一个完整的教育生态系统。它已经逐步内置在多个面向初学者的人工智能学习平台中，包括：</p>
+                        <p data-i18n="about.eco.desc">学习人工智能离不开实训平台。目前，XEduPro已逐步内置到多个AI实训平台、编程工具和智能硬件中，形成了面向中小学AI教育的完整生态。</p>
+
+                        <h5 data-i18n="about.eco.platforms.title">预装XEdu的AI实训平台</h5>
                         <ul>
-                            <li><strong>浦育平台</strong> (OpenInnoLab)</li>
-                            <li><strong>Mo</strong> (浙江大学智海)</li>
-                            <li><strong>OpenHydra</strong></li>
+                            <li data-i18n="about.eco.platforms.p1"><strong>浦育平台（OpenInnoLab）</strong>：天然支持XEdu，在“在线工具”的“人工智能工坊”中可直接使用。</li>
+                            <li data-i18n="about.eco.platforms.p2"><strong>Mo平台（浙大智海）</strong>：浙大“智海”新一代人工智能科教平台的核心组成部分，已支持XEdu环境并内置系列免费课程。</li>
+                            <li data-i18n="about.eco.platforms.p3"><strong>波尔科研空间站（Bohrium）</strong>：深势科技联合北京科学智能研究院发布的AI for Science旗舰平台，2025年上线NOAI课程，采用XEdu为基础工具。</li>
+                            <li data-i18n="about.eco.platforms.p4"><strong>OpenHydra</strong>：适合中小学的开源人工智能教学平台，可在学校机房服务器上部署，让学生通过浏览器使用GPU算力。</li>
                         </ul>
-                        <p data-i18n="about.eco.note">这种生态整合使得XEduPro能够更好地服务于教育场景，为师生提供更加便捷的AI学习体验。</p>
+
+                        <h5 data-i18n="about.eco.tools.title">预装XEdu的AI编程工具</h5>
+                        <ul>
+                            <li data-i18n="about.eco.tools.t1"><strong>Mind+</strong>：上海DFRobot开发的青少年编程工具。</li>
+                            <li data-i18n="about.eco.tools.t2"><strong>mPython</strong>：深圳盛思科技开发的青少年编程工具。</li>
+                        </ul>
+
+                        <h5 data-i18n="about.eco.hardware.title">预装XEdu的AI硬件</h5>
+                        <ul>
+                            <li data-i18n="about.eco.hardware.h1"><strong>行空板</strong></li>
+                            <li data-i18n="about.eco.hardware.h2"><strong>灵芯板</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- 版本历史 -->
+            <!-- 历史贡献纪录 -->
             <div class="row mb-5">
                 <div class="col-12">
                     <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white">
-                            <h4 class="mb-0"><i class="fas fa-history me-2"></i><span data-i18n="about.version.title">版本更新历史</span></h4>
+                        <div class="card-header bg-info text-white">
+                            <h4 class="mb-0"><i class="fas fa-trophy me-2"></i><span data-i18n="about.team.history">历史贡献纪录</span></h4>
                         </div>
                         <div class="card-body">
-                            <div class="timeline">
-                                <div class="timeline-item mb-4">
-                                    <h5 data-i18n="about.version.latest">XEduPro 最新版</h5>
-                                    <p class="text-muted mb-1" data-i18n="about.version.latestsub">最新功能更新</p>
-                                    <ul>
-                                        <li data-i18n="about.version.f1">集成XEduHub深度学习工具库，支持模型分享和流通</li>
-                                        <li data-i18n="about.version.f2">提供丰富的教学案例，如车牌识别、视频上色等AI艺术创作</li>
-                                        <li data-i18n="about.version.f3">支持中小学人工智能教学的核心功能</li>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="mb-3" data-i18n="about.team.history.dev">曾经的开发维护团队</h5>
+                                    <ul class="text-sm">
+                                        <li>王海涛，上海理工大学，上海人工智能实验室</li>
+                                        <li>王宇涵，南京大学，上海人工智能实验室</li>
+                                        <li>戴 娟，商汤科技，上海人工智能实验室</li>
+                                        <li>张崇珍，华东理工大学</li>
+                                        <li>贾彦灏，中国科学院大学</li>
+                                        <li>张格致，上海交通大学</li>
+                                        <li>梁伊雯，同济大学，清华大学</li>
+                                        <li>高剑雄，上海复旦大学</li>
+                                        <li>丛培珊，上海科技大学</li>
+                                        <li>姜燕炜，上海交通大学</li>
+                                        <li>张卉婧，上海复旦大学</li>
+                                        <li>徐泽庭，华东师范大学</li>
+                                        <li>程龙恺，中国石油大学（华东），南开大学</li>
+                                        <li>李子健，华东师范大学，北京大学</li>
+                                        <li>高毓甜，华南师范大学，华东师范大学</li>
+                                        <li>胡君豪，湖北工业大学</li>
+                                        <li>周子皓，华东师范大学</li>
+                                        <li>胡潇桓，美国纽约大学</li>
+                                        <li>谢 集，浙江大学</li>
+                                        <li>魏静洁，上海外国语大学</li>
+                                        <li>祁荣宾，上海人工智能实验室</li>
+                                        <li>刘啸宇，上海人工智能实验室</li>
+                                        <li>王怡婷，上海人工智能实验室</li>
                                     </ul>
                                 </div>
-                                <div class="timeline-item mb-4">
-                                    <h5 data-i18n="about.version.feature">功能特色</h5>
-                                    <p class="text-muted mb-1" data-i18n="about.version.featuresub">教育导向的设计</p>
-                                    <ul>
-                                        <li data-i18n="about.version.f4">面向中小学生的友好界面设计</li>
-                                        <li data-i18n="about.version.f5">丰富的教学案例和课程材料</li>
-                                        <li data-i18n="about.version.f6">支持本地化部署，保护学生隐私</li>
+                                <div class="col-md-6">
+                                    <h5 class="mb-3" data-i18n="about.team.history.partners">为我们提供大量建议的企业和教师</h5>
+                                    <ul class="text-sm">
+                                        <li>OpenHydra团队（九州未来亓绚）</li>
+                                        <li>Mind+团队（DFRobot）</li>
+                                        <li>mPython团队（盛思）</li>
+                                        <li>于方军，山东省淄博市山头中心学校</li>
+                                        <li>吴俊杰，北京师范大学</li>
+                                        <li>郑 祥，温州市第四中学</li>
+                                        <li>刘正云，南通大学附中</li>
+                                        <li>张敬云，江苏省镇江市实验高级中学</li>
+                                        <li>林淼焱，温州科技高级中学</li>
+                                        <li>陈恩慈，温州科技高级中学</li>
                                     </ul>
                                 </div>
                             </div>
+
+                            <p class="mt-4 text-primary font-weight-bold text-center" data-i18n="about.team.history.note">期待您的参与！</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 教育价值 -->
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="text-center mb-4" data-i18n="about.education.title">教育价值与意义</h3>
-                    <div class="row text-center">
-                        <div class="col-md-3 col-6 mb-4">
-                            <div class="partner-logo p-3 bg-light rounded">
-                                <i class="fas fa-lightbulb fa-3x text-primary"></i>
-                                <p class="mt-2 mb-0" data-i18n="about.edu1">启发思维</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 mb-4">
-                            <div class="partner-logo p-3 bg-light rounded">
-                                <i class="fas fa-graduation-cap fa-3x text-info"></i>
-                                <p class="mt-2 mb-0" data-i18n="about.edu2">教育创新</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 mb-4">
-                            <div class="partner-logo p-3 bg-light rounded">
-                                <i class="fas fa-users fa-3x text-warning"></i>
-                                <p class="mt-2 mb-0" data-i18n="about.edu3">协作学习</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 mb-4">
-                            <div class="partner-logo p-3 bg-light rounded">
-                                <i class="fas fa-rocket fa-3x text-danger"></i>
-                                <p class="mt-2 mb-0" data-i18n="about.edu4">快速上手</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
