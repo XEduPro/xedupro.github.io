@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教材 - XEduPro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="xedu-logo.svg" alt="XEduPro Logo" width="32" height="32" class="me-2">
+                <span>XEduPro</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-i18n="nav.home">主页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quickstart.html" data-i18n="nav.quickstart">快速入门</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cases.html" data-i18n="nav.cases">案例</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="textbook.html" data-i18n="nav.docs">教材</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="download.html" data-i18n="nav.download">下载</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-i18n="nav.about">关于</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/XEduPro" target="_blank">GitHub</a>
+                    </li>
+                    <li class="nav-item dropdown lang-switcher">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe me-1"></i><span id="lang-label">简体中文</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#" onclick="switchLang('zh-CN')">简体中文</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="switchLang('zh-TW')">繁體中文</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="switchLang('en')">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 教材横幅 -->
+    <section class="hero-section bg-primary py-3">
+        <div class="container py-2">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mb-2 text-white" data-i18n="textbook.hero.title">教材</h1>
+                    <p class="lead text-white mb-0" data-i18n="textbook.hero.desc">使用XEduPro的系列教材</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教材内容 -->
+    <section class="textbook-content py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card shadow-sm p-4">
+                        <p class="lead mb-0" data-i18n="textbook.intro">XEdu本来就是为青少年的人工智能教育而生，其低门槛、低代码、开箱即用的特点吸引了人工智能教育研究者的关注。只要教学内容中涉及模型训练和推理，XEdu几乎是中小学教材的唯一选择。据不完全统计，有下列出版社的教材使用了XEdu系列工具。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="mb-4" data-i18n="textbook.tsinghua.title">清华大学出版社</h3>
+                    <p data-i18n="textbook.tsinghua.desc">清华大学出版社基础教育分社是XEdu项目的发起单位之一，其涉及到人工智能教育的教材，全部采用XEdu。</p>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 data-i18n="textbook.tsinghua.k12.title">中小学人工智能通识系列</h5>
+                                    <p data-i18n="textbook.tsinghua.k12.desc">覆盖中小学不同学段，小学为3年级到6年级，初中为7年级和8年级，高中为高一。每个学期1册。</p>
+                                    <p class="mb-1"><strong data-i18n="textbook.tsinghua.k12.editor">主编：郑南宁，执行主编：谢作如</strong></p>
+                                    <p class="text-muted small" data-i18n="textbook.tsinghua.k12.region">使用区域：新疆、四川、内蒙古、山东等</p>
+                                    <a href="https://detail.tmall.com/item.htm?abbucket=9&id=997332673594" target="_blank" class="btn btn-primary btn-sm" data-i18n="textbook.view">查看详情</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 data-i18n="textbook.tsinghua.vocational.title">中职人工智能通识系列</h5>
+                                    <p data-i18n="textbook.tsinghua.vocational.desc">分为人工智能基础、职业场景中的人工智能应用三个单元，采用项目式学习理念编写，共9个项目，计36课时。</p>
+                                    <p class="text-muted" data-i18n="textbook.comingSoon">待上架</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 data-i18n="textbook.tsinghua.it.title">信息科技系列（初中）</h5>
+                                    <p data-i18n="textbook.tsinghua.it.desc">清华大学出版社信息科技8年级下为人工智能，分为机器学习、深度学习、生成式人工智能等三个单元。</p>
+                                    <p class="mb-1"><strong data-i18n="textbook.tsinghua.it.author">作者：谢作如 祁荣宾</strong></p>
+                                    <p class="text-muted small" data-i18n="textbook.tsinghua.it.region">使用区域：新疆、青海、贵州、湖南等</p>
+                                    <a href="https://item.taobao.com/item.htm?abbucket=9&id=885812687794" target="_blank" class="btn btn-primary btn-sm" data-i18n="textbook.view">查看详情</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="mb-4" data-i18n="textbook.zhejiang.title">浙江教育出版社</h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 data-i18n="textbook.zhejiang.it.title">信息科技系列</h5>
+                                    <p class="mb-0" data-i18n="textbook.zhejiang.it.desc">信息科技教材中多处使用XEdu工具。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 data-i18n="textbook.zhejiang.ai.title">人工智能通识系列</h5>
+                                    <p data-i18n="textbook.zhejiang.ai.desc">先后发布两个版本，全部采用XEdu、Mind+等工具。其中有一个版本翻译为英语版本，在马来西亚使用。</p>
+                                    <p class="mb-1"><strong data-i18n="textbook.zhejiang.ai.editor">主编：王万良</strong></p>
+                                    <p class="text-muted small" data-i18n="textbook.zhejiang.ai.region">使用区域：河北、马来西亚等</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>XEduPro</h5>
+                    <p data-i18n="footer.desc">一套开箱即用的人工智能学习工具，致力于降低AI学习门槛，提升开发效率。</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 data-i18n="footer.quicklinks">快速链接</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="quickstart.html" class="text-light" data-i18n="footer.quickstart">快速入门</a></li>
+                        <li><a href="https://xedu.readthedocs.io/zh-cn/master/" target="_blank" class="text-light" data-i18n="footer.officialDocs">官方文档</a></li>
+                        <li><a href="download.html" class="text-light" data-i18n="footer.downloadCenter">下载中心</a></li>
+                        <li><a href="about.html" class="text-light" data-i18n="footer.aboutUs">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 data-i18n="footer.contact">联系我们</h5>
+                    <p data-i18n="footer.email">邮箱：xiezuoru@vip.qq.com</p>
+                    <p>GitHub：<a href="https://github.com/xedupro" class="text-light">github.com/xedupro</a></p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p data-i18n="footer.copyright">&copy; 2026 XEduPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/i18n.js"></script>
+</body>
+</html>
