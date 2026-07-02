@@ -1,9 +1,9 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "xedupro",
-  "workers_dev": true,   // 启用 workers.dev 子域
+  "workers_dev": true,
   "compatibility_date": "2026-07-02",
-  "observability": { "enabled": true },
-  "assets": { "directory": "." },
-  "compatibility_flags": ["nodejs_compat"]
+  "compatibility_flags": [],
+  "assets": {
+    "directory": "./"
+  }
 }
