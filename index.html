@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XEduPro - 开箱即用的人工智能学习工具</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- 导航栏 -->
@@ -58,19 +58,30 @@
     </nav>
 
     <!-- 主页横幅 -->
-    <section class="hero-section bg-primary py-5">
-        <div class="container py-5">
+    <section class="hero-section hero-home bg-primary py-5">
+        <div class="hero-orb hero-orb-one"></div>
+        <div class="hero-orb hero-orb-two"></div>
+        <div class="container py-5 position-relative">
             <div class="row align-items-center">
                 <div class="col-lg-7">
+                    <div class="eyebrow"><span></span> AI LEARNING PLATFORM</div>
                     <h1 class="display-4 fw-bold mb-4 text-white" data-i18n="index.hero.title">XEduPro</h1>
                     <p class="lead mb-4 text-white" data-i18n="index.hero.desc">一套开箱即用的人工智能学习工具，集成深度学习、机器学习、大语言模型、计算机视觉等多种技术栈，为每一位人工智能初学者而设计。</p>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 hero-actions">
                         <a href="quickstart.html" class="btn btn-light btn-lg px-4" data-i18n="index.hero.start">快速开始</a>
                         <a href="https://xedu.readthedocs.io/zh-cn/master/" target="_blank" class="btn btn-outline-light btn-lg px-4" data-i18n="index.hero.docs">官方文档</a>
                     </div>
                 </div>
-                <div class="col-lg-5 text-center">
-                    <img src="xedu-logo.svg" alt="XEduPro Logo" class="img-fluid hero-image" style="max-width: 270px; margin-left: 50px;">
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <div class="ai-console" aria-label="AI workflow preview">
+                        <div class="console-topbar"><span></span><span></span><span></span><p>xedupro / workspace</p></div>
+                        <div class="console-body">
+                            <div class="console-brand"><img src="xedu-logo.svg" alt="XEduPro Logo"><span>Intelligence, ready.</span></div>
+                            <div class="console-prompt"><i class="fas fa-sparkles"></i><span>正在加载 AI 工具链</span><b>100%</b></div>
+                            <div class="console-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                            <div class="console-stats"><div><small>MODELS</small><strong>06</strong></div><div><small>READY</small><strong>∞</strong></div><div><small>STATUS</small><strong>ONLINE</strong></div></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,6 +91,7 @@
     <section class="features-section py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
+                <div class="section-kicker">BUILT FOR MAKERS</div>
                 <h2 class="fw-bold" data-i18n="index.features.title">核心特性</h2>
                 <p class="text-muted" data-i18n="index.features.desc">为人工智能学习者提供全方位的工具支持</p>
             </div>
